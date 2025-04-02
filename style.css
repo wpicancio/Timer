@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #9f6bff, #6119cc);
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttons-container button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #262626;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.buttons-container button:hover {
+  background-color: #404040;
+}
+
+#stopwatch {
+  display: flex;
+  flex-direction: column;
+  background-color: #262626;
+  padding: 2rem;
+  border-radius: 8px;
+  display: none;
+}
+
+#timerInputContainer {
+  margin-bottom: 1.5rem;
+  display: none;
+}
+
+#timerInput {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 2px solid #9f6bff;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.input-info {
+  margin-top: 0.5rem;
+  color: #ccc;
+  font-size: 0.8rem;
+  text-align: center;
+}
+#timer {
+  background-color: #262626;
+  height: 250px;
+  width: 250px;
+  border: 3px solid #9f6bff;
+  margin-bottom: 1.5rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+  box-sizing: border-box; 
+}
+#timerTimer {
+  background-color: #262626;
+  height: 250px;
+  width: 250px;
+  border: 3px solid #9f6bff;
+  margin-bottom: 1.5rem;
+  margin-left: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+  box-sizing: border-box; 
+}
+#timer .content {
+  margin: 0; /* Remove margens internas do conteúdo */
+}
+
+#actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding: .6rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  color: #262626;
+  background-color: #e0e7ff;
+  transition: background-color .2s ease-in;
+  cursor: pointer; 
+}
+
+#actions button:hover {
+  background-color: #c4b5fd;
+}
+
+#marks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: #ffffff;
+}
+
+#marks-list p:first-child {
+  margin-top: 1.5rem;
+}
+#fullscreen-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: .6rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  color: #262626;
+  background-color: #e0e7ff;
+  transition: background-color .2s ease-in;
+  cursor: pointer; 
+}

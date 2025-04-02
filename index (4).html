@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cronômetro/Timer</title>
+</head>
+<body>
+    <div class="buttons-container">
+        <button id="btnCron">Cronômetro</button>
+        <button id="btnTimer">Timer</button>
+    </div>
+    
+    <div id="stopwatch">
+        <div id="timerInputContainer">
+            <input type="text" id="timerInput" placeholder="00:01:00" />
+            <p class="input-info">Digite o tempo (hh:mm:ss, mm:ss ou ss)</p>
+        </div>
+
+        <div id="timer"> 00:00:00 </div>
+
+        <div id="actions">
+            <button id="reset">
+                <i class="fa-solid fa-redo"></i> 
+            </button>
+            <button id="power" action="start">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="mark">
+                <i class="fa-solid fa-flag"></i>
+            </button>
+        </div>
+
+        <div id="marks-list"></div>
+    </div>
+
+    <button id="fullscreen-toggle">
+        <i class="fa-solid fa-expand"></i> 
+      </button>
+      
+    <script src="script.js"></script>
+</body>
+</html>
